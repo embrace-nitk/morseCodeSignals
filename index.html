@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXPLORING HAM RADIO: UNDERSTANDING HAM SIGNALS</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="script.js"></script>
+<body>
+
+    <div id="page1" class="page" style="display: block;" >
+        
+        <h1>EXPLORING HAM RADIO: UNDERSTANDING HAM SIGNALS</h1>
+        <br><br>
+        <h2>Objective:</h2>
+        <br>
+        <p>To familiarize individuals with the use of HAM Signals in HAM radio communication, and its importance
+            in ensuring safety during radio operations.</p>
+        <br>
+        <br>
+        <h2>Description:</h2><br>
+        <p>HAM Signals, in the context of HAM radio, is a crucial element for enhancing the safety. It involves the
+            study of different types of signals like distress signal, urgent signal, safety signal, and test signal. The
+            use of phonetics in HAM radio serves to ensure safety.<br>
+            <br></p>
+       
+        <a id="next" href="#" onclick="showNextPage(); return false;">
+            <img src="Next.png" alt="NEXT" width="30" height="30">
+        </a>
+        <div class="footer">&copy; EMBRACE - NITK <script>document.write(new Date().getFullYear())</script>
+        </div>
+    </div>
+    
+
+    <div id="page2" class="page" style="display: none;">
+        <!-- style="display: none;" -->
+        <div id="screenPage2" class="page">
+            <h1>EXPLORING HAM RADIO: UNDERSTANDING HAM SIGNALS</h1>
+            <br><br>
+            <div class="allignment">
+                <strong class="incanvas">STEP</strong>
+                <span class="circlebg">&nbsp;1&nbsp;</span>
+                <p class="steptext">&nbsp;Select the signal in the input box provided and click</p>
+            </div>
+            <br>
+            <div class="select">
+                <label for="numberInput">Select the Signals:</label>
+                <select style="width: 120px;" id="numberInput">
+                    <option value="Distress">Distress Signals</option>
+                    <option value="Urgent">Urgent Signals</option>
+                    <option value="Safety">Safety Sinals</option>
+                    <option value="Test">Test Signals</option>
+                </select>
+            </div>
+            <br>
+            <br>
+            <div class="btn">
+                <button onclick="submitForm()">Submit</button>
+            </div>
+            <br>
+            <div class="footer">&copy; 2023 SOLVE - The Virtual Lab @ NITK Surathkal,
+                Department of Water Resources & Ocean Engineering </div>
+        </div>    
+        </div>
+    </div>
+
+    <div id="screen" class="page" style="display: none;">
+        
+        <h1>EXPLORING HAM RADIO: UNDERSTANDING HAM SIGNALS</h1>
+        <br><br>
+        <div class="allignment">
+            <strong class="incanvas">STEP</strong>
+            <span class="circlebg">&nbsp;2&nbsp;</span>
+            <p class="steptext">&nbsp;observe the allocations of the signal</p>
+        </div>
+
+            <button id="sendMorseCode" onclick="sendMorseCode()">Send Morse Code</button>
+            <div id="morseCodeOutput"></div>
+
+            <button id="sendVoiceSignal" onclick="sendVoiceSignal()">Send Voice Signal</button>
+            <div id="voiceSignalOutput"></div>
+
+            <a id="repeat" href="#"  onclick="repeatPage(); return false;">
+                <img src="repeat.png" alt="repeat" width="30" height="30">
+            </a>
+            
+            <div class="footer">&copy; 2023 SOLVE - The Virtual Lab @ NITK Surathkal,
+                Department of Water Resources & Ocean Engineering </div>
+    </div>
+</body>
+</html>
